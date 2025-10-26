@@ -1,0 +1,49 @@
+body {
+    display: flex; /* ใช้ Flexbox เพื่อช่วยจัดองค์ประกอบ */
+    justify-content: center; /* จัดให้อยู่กึ่งกลางแนวนอน (มุกคือ จัดตรงนี้) */
+    align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    height: 100vh; /* กำหนดความสูงเต็มหน้าจอ */
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.meme-container {
+    width: 90%;
+    max-width: 600px;
+    position: relative; /* สำคัญสำหรับการวางตำแหน่งข้อความ */
+    text-align: center;
+    border: 5px solid black;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* เพื่อให้รูปภาพไม่เลยขอบ */
+}
+
+.meme-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.meme-text {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    color: white;
+    text-shadow: 
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000; /* สร้างขอบตัวอักษรสีดำ */
+    font-size: 2em;
+    font-weight: 900; /* ตัวอักษรหนามาก */
+    text-transform: uppercase; /* ตัวอักษรพิมพ์ใหญ่ทั้งหมด */
+}
+
+.top-text {
+    top: 0; /* ข้อความด้านบน */
+}
+
+.bottom-text {
+    bottom: 0; /* ข้อความด้านล่าง */
+}
